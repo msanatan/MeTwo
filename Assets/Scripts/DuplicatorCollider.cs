@@ -6,6 +6,7 @@ public class DuplicatorCollider : MonoBehaviour
 {
     [SerializeField] Transform cloneSpawnPosition;
     [SerializeField] GameObject duplicatePrefab;
+    [SerializeField] GameObject player;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,7 @@ public class DuplicatorCollider : MonoBehaviour
     }
 
     private void CreateDuplicate() {
-        Instantiate(duplicatePrefab, cloneSpawnPosition.position, cloneSpawnPosition.rotation);
+        var duplicatePlayer = Instantiate(duplicatePrefab, cloneSpawnPosition.position, cloneSpawnPosition.rotation);
+        duplicatePlayer.transform.parent = player.transform;
     }
 }
