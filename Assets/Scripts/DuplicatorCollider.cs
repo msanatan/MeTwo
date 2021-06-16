@@ -10,12 +10,15 @@ public class DuplicatorCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("You're in the red zone");
         CreateDuplicate();
     }
 
     private void CreateDuplicate() {
         var duplicatePlayer = Instantiate(duplicatePrefab, cloneSpawnPosition.position, cloneSpawnPosition.rotation);
+        duplicatePlayer.transform.tag = "PlayerDuplicate";
+        var dpSpriteRenderer = duplicatePlayer.GetComponent<SpriteRenderer>();
+        dpSpriteRenderer.sortingLayerName = "Player";
+        dpSpriteRenderer.sortingOrder = 0;
         duplicatePlayer.transform.parent = player.transform;
     }
 }
