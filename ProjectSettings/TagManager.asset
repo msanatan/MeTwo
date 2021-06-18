@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Gem
   - PlayerDuplicate
+  - Obstacle
   layers:
   - Default
   - TransparentFX
