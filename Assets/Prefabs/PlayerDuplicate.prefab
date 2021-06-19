@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7688410109564018459}
   - component: {fileID: 7688410109564018452}
   - component: {fileID: 7416941921461181205}
+  - component: {fileID: 6037608214649004731}
   m_Layer: 11
   m_Name: PlayerDuplicate
   m_TagString: PlayerDuplicate
@@ -145,3 +146,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 1763297213692480445, guid: 916a2d50390f5804a9904f8fc3eadae4, type: 3}
+--- !u!114 &6037608214649004731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7688410109564018453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2e1f45c02919a4fb945677d82403e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

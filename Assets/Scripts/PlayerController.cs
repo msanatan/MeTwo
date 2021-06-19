@@ -5,8 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Tilemap groundTileMap;
-    [SerializeField] private Tilemap obstaclesTileMap;
+    [SerializeField] public Tilemap groundTileMap;
+    [SerializeField] public Tilemap obstaclesTileMap;
     private PlayerMovement controls;
 
     private void Awake()

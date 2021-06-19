@@ -1,14 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerDuplicateCollisions : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private Tilemap groundTileMap;
+    private Tilemap obstaclesTileMap;
+
+    public void Start()
     {
-        if (collision.transform.tag == "PlayerDuplicate")
+        groundTileMap = GetComponentInParent<PlayerController>().groundTileMap;
+        obstaclesTileMap = GetComponentInParent<PlayerController>().obstaclesTileMap;
+    }
+
+    public void Update()
+    {
+        Vector3Int gridPosition = groundTileMap.WorldToCell(transform.position);
+        if (!groundTileMap.HasTile(gridPosition) || obstaclesTileMap && obstaclesTileMap.HasTile(gridPosition))
         {
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
