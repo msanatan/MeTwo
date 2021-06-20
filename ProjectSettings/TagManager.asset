@@ -7,6 +7,7 @@ TagManager:
   - Gem
   - PlayerDuplicate
   - Obstacle
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - Duplicator
   - Gems
   - Obstacles
+  - Emitters
   - Player
-  - 
   - 
   - 
   - 
@@ -59,6 +60,9 @@ TagManager:
   - name: Obstacles
     uniqueID: 1963106193
     locked: 0
-  - name: Player
+  - name: Emitters
     uniqueID: 3722442011
+    locked: 0
+  - name: Player
+    uniqueID: 2269769859
     locked: 0
