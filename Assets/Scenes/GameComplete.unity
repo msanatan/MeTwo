@@ -976,7 +976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You recoveered all of the Soul Gems - well done Wizard!
+  m_text: You recovered all of the magic gems - well done Wizard!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e44ab33a3b3941a4b87c40b50c8885f5, type: 2}
   m_sharedMaterial: {fileID: -5995938487648150257, guid: e44ab33a3b3941a4b87c40b50c8885f5, type: 2}
