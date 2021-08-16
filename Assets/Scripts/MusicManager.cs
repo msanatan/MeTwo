@@ -6,7 +6,7 @@ public class MusicManager : MonoBehaviour
 {
 
     private static MusicManager musicManagerInstance;
-    private AudioSource backgroundMusic;
+    AudioSource backgroundMusic;
     
     void Awake()
     {
