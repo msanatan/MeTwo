@@ -17,12 +17,12 @@ TagManager:
   - UI
   - Background
   - Ground
+  - Walls
   - Duplicator
   - Gems
   - Obstacles
   - Emitters
   - Player
-  - 
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 4001418211
+    locked: 0
+  - name: Walls
+    uniqueID: 2665139299
     locked: 0
   - name: Duplicator
     uniqueID: 2481987635
