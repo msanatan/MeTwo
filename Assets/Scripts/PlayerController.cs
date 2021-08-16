@@ -5,8 +5,9 @@ using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] public Tilemap groundTileMap;
-    [SerializeField] public Tilemap obstaclesTileMap;
+    public Tilemap groundTileMap;
+    public Tilemap wallsTileMap;
+    public Tilemap obstaclesTileMap;
     private PlayerMovement controls;
 
     private void Awake()
@@ -41,7 +42,11 @@ public class PlayerController : MonoBehaviour
     private bool CanMove(Vector2 direction)
     {
         Vector3Int gridPosition = groundTileMap.WorldToCell(transform.position + (Vector3)direction);
-        if (!groundTileMap.HasTile(gridPosition) || obstaclesTileMap && obstaclesTileMap.HasTile(gridPosition))
+        if (
+            !groundTileMap.HasTile(gridPosition) ||
+            obstaclesTileMap && obstaclesTileMap.HasTile(gridPosition) ||
+            wallsTileMap && wallsTileMap.HasTile(gridPosition)
+            )
         {
             return false;
         }

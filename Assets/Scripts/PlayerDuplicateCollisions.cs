@@ -5,8 +5,9 @@ using UnityEngine.Tilemaps;
 
 public class PlayerDuplicateCollisions : MonoBehaviour
 {
-    private Tilemap groundTileMap;
-    private Tilemap obstaclesTileMap;
+    Tilemap groundTileMap;
+    Tilemap wallsTileMap;
+    Tilemap obstaclesTileMap;
 
     public void Start()
     {
@@ -17,7 +18,11 @@ public class PlayerDuplicateCollisions : MonoBehaviour
     public void Update()
     {
         Vector3Int gridPosition = groundTileMap.WorldToCell(transform.position);
-        if (!groundTileMap.HasTile(gridPosition) || obstaclesTileMap && obstaclesTileMap.HasTile(gridPosition))
+        if (
+            !groundTileMap.HasTile(gridPosition) ||
+            obstaclesTileMap && obstaclesTileMap.HasTile(gridPosition) ||
+            wallsTileMap && wallsTileMap.HasTile(gridPosition)
+            )
         {
             Destroy(gameObject);
         }
