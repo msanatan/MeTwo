@@ -51,17 +51,17 @@ TagManager:
   - name: Ground
     uniqueID: 4001418211
     locked: 0
-  - name: Walls
-    uniqueID: 2665139299
-    locked: 0
-  - name: Duplicator
-    uniqueID: 2481987635
-    locked: 0
   - name: Gems
     uniqueID: 2207724023
     locked: 0
   - name: Obstacles
     uniqueID: 1963106193
+    locked: 0
+  - name: Duplicator
+    uniqueID: 2481987635
+    locked: 0
+  - name: Walls
+    uniqueID: 2665139299
     locked: 0
   - name: Emitters
     uniqueID: 3722442011
