@@ -2568,7 +2568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1615779171}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: DuplicateSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
