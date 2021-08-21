@@ -10,7 +10,10 @@ public class DuplicatorCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        CreateDuplicate();
+        if (collision.gameObject.tag == "Player")
+        {
+            CreateDuplicate();
+        }
     }
 
     private void CreateDuplicate() {
