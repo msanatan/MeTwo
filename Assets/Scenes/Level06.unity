@@ -180,6 +180,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 916a2d50390f5804a9904f8fc3eadae4, type: 3}
+--- !u!114 &45333015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1763297213692480442, guid: 916a2d50390f5804a9904f8fc3eadae4, type: 3}
+  m_PrefabInstance: {fileID: 45333014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d52ebc5d05f1cb4e91d516c862828eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &66736863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8133803631107814898, guid: 24cc3b6a4b80c4f43ab2a33ddb015046, type: 3}
@@ -301,7 +312,7 @@ GameObject:
   - component: {fileID: 457484222}
   - component: {fileID: 457484221}
   - component: {fileID: 457484220}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Obstacles
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1343,7 +1354,7 @@ GameObject:
   - component: {fileID: 901464822}
   - component: {fileID: 901464821}
   - component: {fileID: 901464820}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Duplicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2500,6 +2511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8133803631107814900, guid: 24cc3b6a4b80c4f43ab2a33ddb015046, type: 3}
+      propertyPath: sceneLoader
+      value: 
+      objectReference: {fileID: 45333015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24cc3b6a4b80c4f43ab2a33ddb015046, type: 3}
 --- !u!1001 &1150922404
