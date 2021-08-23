@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    [SerializeField] Animator transition;
+    [SerializeField] float transitionTime = 1f;
+
     public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadSceneAsync(currentSceneIndex + 1, LoadSceneMode.Single);
+        StartCoroutine(LoadLevel(currentSceneIndex));
     }
 
     public void LoadStartScene()
@@ -19,6 +22,13 @@ public class SceneLoader : MonoBehaviour
     public void LoadGameCompleteScene()
     {
         SceneManager.LoadScene("GameComplete", LoadSceneMode.Single);
+    }
+
+    IEnumerator LoadLevel(int levelIndex)
+    {
+        transition.SetTrigger("start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadSceneAsync(levelIndex + 1, LoadSceneMode.Single);
     }
 
     public void QuitGame()
