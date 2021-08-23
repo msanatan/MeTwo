@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
-        transition.SetTrigger("start");
+        transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadSceneAsync(levelIndex + 1, LoadSceneMode.Single);
     }
