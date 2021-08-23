@@ -23,5 +23,9 @@ public class DuplicatorCollider : MonoBehaviour
         dpSpriteRenderer.sortingLayerName = "Player";
         dpSpriteRenderer.sortingOrder = 0;
         duplicatePlayer.transform.parent = player.transform;
+        // Copy scene loader - needed for transitions to work if the gem is with the duplicate
+        var playerController = player.GetComponent<CollectGem>();
+        var duplicateController = duplicatePlayer.GetComponent<CollectGem>();
+        duplicateController.sceneLoader = playerController.sceneLoader;
     }
 }
