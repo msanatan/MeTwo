@@ -2733,6 +2733,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1763297213692480442, guid: 916a2d50390f5804a9904f8fc3eadae4, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1450618820}
     - target: {fileID: 1763297213692480443, guid: 916a2d50390f5804a9904f8fc3eadae4, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2794,6 +2798,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d52ebc5d05f1cb4e91d516c862828eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1450618820 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6576617640790086203, guid: 916a2d50390f5804a9904f8fc3eadae4, type: 3}
+  m_PrefabInstance: {fileID: 1450618818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560421530
 GameObject:
   m_ObjectHideFlags: 0
